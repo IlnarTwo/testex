@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background: #F6F6F6;
+
+}
+header, footer{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    min-height: 79px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px #DEDEDE;
+}
+footer{
+    min-height: 103px;
+}
+header>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0vh 4vh;
+}
+header>div>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer>div{
+    display: flex;
+    flex-direction: row;
+    margin: 0vh 4vh;
+}
+section{
+    margin: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{/*стили для самих кнопок*/
+    background: #E3353E;
+    border-radius: 20px;
+    border: none;
+    margin: 1vh;
+    padding: 1vh;
+    min-width: 12vh;
+    color: white;
+}
+button:hover{
+    background: #D3202A;
+}
+button:active{
+    background: #BA161F;
+}
+.button{/*стили для ссылок с классом кнопки*/
+    color: #0F67CF;
+}
+.button:hover{
+    color: #073266;
+}
+.button:active{
+    color: #051F3E;
+}
+.list{
+    width: 85.9%;
+}
+.hotel{/*блоки с отелями*/
+    width: 100%;
+    height: 31vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4vh 0vh;
+}
+.info{/*стили для блока информации об отеле*/
+    width: 69.35%;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0vh 2%;
+}
+.info-hotel, .price{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-hotel{
+    box-shadow: 0px 2px #DEDEDE;
+}
+.photo{/*размеры картиннок отелей*/
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+h3{
+    color: #0F67CF;
+}
+.ico{
+    margin: 0.6vh 0.5vh;
+}
+#map{
+    width: 31.76%; 
+    height: 675px; 
+}
+.grayText{
+    color: #959DA7;
+    font-size: 14px;
+}
+p>span{
+    margin-right: 1.5vh;
+}
+#cancel, #breakfast{
+    color: #0D9333;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.line>svg{
+    margin-right: 1vh;
+}
+.buttonLine{
+    margin: 0.5vh;
+    display: none;
+}
+@media (max-width: 1024px) {
+    section{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+    }
+    .chapter, #map{
+        width: 100%;
+        background: none;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+        border-radius: 20px 20px 0px 0px;
+        background: #F6F6F6;
+        padding: 0.8vh 0.9vh 0vh 0.4vh;
+    }
+    footer{
+        display: none;
+    }    
+    .chapter>p, .chapter>h4{
+        display: none;
+    }
+    .buttonLine{
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .hotel{/*блоки с отелями*/
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{/*стили для блока информации об отеле*/
+        width: 96%;
+        height: min-content;
+    }
+    .info-hotel, .price{
+        height: min-content;
+    }
+}
+@media (max-width: 426px) {
+    .buttons>a{
+        display: none;
+    }
+    .user>a>span{
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    
+}
